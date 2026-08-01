@@ -1,2 +1,13 @@
 # customer-management-system
-Customer Management System built with FastAPI, Docker and AWS
+
+## Overview
+
+Learning portfolio for AWS Solution Architect.
+
+## Tech Stack
+
+- Python
+- FastAPI
+- Docker
+- PostgreSQL
+- AWS
