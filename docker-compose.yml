@@ -1,5 +1,18 @@
 
 services:
+  api: #fastapi用コンテナを作成なのでapiと命名
+    build: #Dockerfileから作成
+      context: . #Dockerビルド時にDockerfileが参照できるファイルの範囲　※ビルド＝dockerfileからdockerイメージを作成すること
+      dockerfile: Dockerfile
+    container_name: customer-management-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+
+
   db:
     image: postgres:17
 
@@ -18,3 +31,5 @@ services:
 
 volumes:
   postgres_data:
+
+  
