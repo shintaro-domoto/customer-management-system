@@ -1,3 +1,11 @@
+#　Webフレームワーク
 fastapi
+
+#　FastAPIを起動するためのASGIサーバー
 uvicorn
 
+#　ORM（PythonからDBを操作するためのライブラリ）
+sqlalchemy
+
+#  PostgreSQL用ドライバー
+psycopg2-binary
